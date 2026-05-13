@@ -1,41 +1,41 @@
-# 📄 `README.md`
-
-```md
 # 🎮 Steam Random Game Launcher
 
-Un script Python permettant de lancer automatiquement un jeu aléatoire depuis votre bibliothèque Steam.
+Un script Python qui lance automatiquement un jeu aléatoire depuis votre bibliothèque Steam.
 
-Le script récupère vos jeux via l’API Steam, sélectionne un jeu aléatoire parmi ceux que vous possédez, puis le lance directement sur votre PC.
+Le programme :
 
----
+- récupère vos jeux via l’API Steam ;
+- choisit un jeu aléatoire ;
+- lance automatiquement le jeu sur votre PC.
 
-# 🚀 Objectif
-
-Le but de ce projet est simple :
-
-- récupérer la liste de vos jeux Steam ;
-- choisir un jeu aléatoire ;
-- lancer automatiquement ce jeu depuis votre installation Steam.
-
-Pratique si vous ne savez jamais à quoi jouer ou si vous souhaitez redécouvrir des jeux oubliés de votre bibliothèque.
+Idéal pour redécouvrir des jeux oubliés ou arrêter de passer 30 minutes à choisir quoi lancer.
 
 ---
 
-# 📦 Installation
+## 🚀 Fonctionnalités
 
-## Prérequis
+- 🎲 Sélection aléatoire d’un jeu Steam
+- 📚 Récupération automatique de votre bibliothèque
+- ▶️ Lancement automatique du jeu via Steam
+- 🖥️ Détection des bibliothèques Steam locales
+
+---
+
+## 📦 Installation
+
+### Prérequis
 
 - Python 3.12
-- Steam installé sur votre PC
+- Steam installé et connecté
 
-## Cloner le projet
+### Cloner le projet
 
 ```bash
 git clone <URL_DU_REPOSITORY>
 cd <NOM_DU_PROJET>
 ```
 
-## Installer les dépendances
+### Installer les dépendances
 
 ```bash
 pip install -r requirements.txt
@@ -43,17 +43,17 @@ pip install -r requirements.txt
 
 ---
 
-# ⚙️ Configuration
+## ⚙️ Configuration
 
-Avant de lancer le script, vous devez configurer plusieurs informations importantes.
+Avant de lancer le script, configurez les informations suivantes.
 
-## 1. Clé API Steam
+### 🔑 Clé API Steam
 
-Récupérez votre clé API Steam ici :
+Récupérez votre clé API ici :
 
 👉 https://steamcommunity.com/dev/apikey
 
-Puis renseignez-la dans le script :
+Puis ajoutez-la dans le script :
 
 ```python
 API_KEY = "VOTRE_CLE_API"
@@ -61,7 +61,7 @@ API_KEY = "VOTRE_CLE_API"
 
 ---
 
-## 2. Steam ID
+### 🆔 Steam ID
 
 Récupérez votre Steam ID ici :
 
@@ -75,9 +75,9 @@ STEAM_ID = "76561198267777638"
 
 ---
 
-## 3. Chemin Steam
+### 📁 Chemin de Steam
 
-Vous devez également renseigner le chemin vers votre dossier `steamapps`.
+Indiquez le chemin vers votre dossier `steamapps`.
 
 Le fichier `libraryfolders.vdf` doit être présent dans ce dossier.
 
@@ -91,7 +91,7 @@ STEAM_PATHS = [
 
 ---
 
-# ▶️ Utilisation
+## ▶️ Utilisation
 
 Lancez simplement le script :
 
@@ -99,30 +99,30 @@ Lancez simplement le script :
 python steam_random_game.py
 ```
 
-Le programme :
+### Le programme va :
 
-1. récupère vos jeux Steam ;
-2. choisit un jeu aléatoire ;
-3. lance automatiquement le jeu.
+1. récupérer votre bibliothèque Steam ;
+2. choisir un jeu aléatoire ;
+3. lancer automatiquement le jeu sélectionné.
 
 ---
 
-# 🛠️ Technologies utilisées
+## 🛠️ Technologies utilisées
 
 - Python 3.12
 - API Steam Web
-- Détection locale de la bibliothèque Steam
+- Gestion des bibliothèques Steam locales
 
 ---
 
-# 📌 Notes
+## 📌 Notes importantes
 
-- Le compte Steam doit être public pour récupérer les jeux via l’API.
+- Votre profil Steam doit être public pour permettre la récupération des jeux via l’API.
 - Steam doit être installé et connecté.
-- Vérifiez que les chemins renseignés dans `STEAM_PATHS` sont corrects.
+- Vérifiez que les chemins définis dans `STEAM_PATHS` sont corrects.
 
 ---
 
-# 📄 Licence
+## 📄 Licence
 
-Projet distribué sous licence MIT.
+Ce projet est distribué sous licence MIT.
