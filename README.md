@@ -47,8 +47,6 @@ Récupérez votre clé API Steam ici :
 
 Puis renseignez-la dans le script :
 
-```
-
 python
 API_KEY = ""
 
