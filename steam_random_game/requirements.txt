@@ -1,0 +1,7 @@
+# ======================================
+# Steam Random Game Launcher
+# Requirements
+# ======================================
+
+requests
+vdf
