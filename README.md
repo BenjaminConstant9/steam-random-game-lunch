@@ -127,5 +127,3 @@ Le programme :
 
 Projet distribué sous licence MIT.
 ```
-
----
